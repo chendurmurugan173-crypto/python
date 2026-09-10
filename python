@@ -1,0 +1,28 @@
+name = input("Enter Student Name: ")
+
+tamil = int(input("Enter Tamil Mark: "))
+english = int(input("Enter English Mark: "))
+python = int(input("Enter Python Mark: "))
+maths = int(input("Enter Maths Mark: "))
+computer = int(input("Enter Computer Mark: "))
+
+total = tamil + english + python + maths + computer
+average = total / 5
+
+print("\n----- STUDENT RESULT -----")
+print("Name:", name)
+print("Total:", total)
+print("Average:", average)
+
+if average >= 90:
+    print("Grade: A+")
+elif average >= 80:
+    print("Grade: A")
+elif average >= 70:
+    print("Grade: B")
+elif average >= 60:
+    print("Grade: C")
+elif average >= 50:
+    print("Grade: D")
+else:
+    print("Grade: F")
